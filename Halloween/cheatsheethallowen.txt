@@ -1,0 +1,40 @@
+       
+       
+       La animacion mas sencilla se contraola desde css
+       :hover 
+
+       CSS ANIMATION - https://www.w3schools.com/css/css3_animations.asp
+        
+        @keyframs 
+
+       /////////////
+
+       con animacion
+       
+       // moontext o cualquier name puesto en ese caso
+
+       #moontext{
+              opacity: 0;
+              animation-name:showmoontext;
+              animation-duration: 6s;
+              animation-iteration-count; infinite;
+
+       }
+
+       @keyframes showmoontext {
+
+              from  {
+                     
+                     opacity: 0;
+                     color: white;
+                     left:0px;
+              }
+
+              to   { 
+                     opacity:  1;
+                     color: red; 
+                     left: 500px;
+
+                    }
+
+       }

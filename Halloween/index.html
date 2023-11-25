@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALLOWEEN</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="img/calabaza.png" rel="icon" type="image/x-icon">
+    <script src="./js/halloween.js"></script>
+
+</head>
+
+<body>
+
+   <div id="escenario">
+
+        <!--WITCH-->
+
+        <p id="windowstext">Do not touch the window!</p>
+    
+        <img id="witch" src="./img/witch.gif" alt="">
+        
+        <div id="house" onmouseover="show('witch');sound('witchsound')" onmouseout="hide('witch');silence('witchsound')"></div>
+        
+        <audio id="witchsound">
+            <source src="./sonido/wrongplace.mp3" type="audio/mp3">
+        </audio>
+
+        <!--GHOST-->
+
+        <p id="fuentetext">I wouldn't touch it if I were you</p>
+
+        <img id="ghost" src="./img/ghost.gif" alt="">
+        
+        <div id="fuente" onmouseover="show('ghost');sound('ghostsound')" onmouseout="hide('ghost');silence('ghostsound')"></div>
+        
+        <audio id="ghostsound">
+            <source src="./sonido/ghostsound.mp3" type="audio/mp3">
+        </audio>
+
+
+
+        <p id="screamtext">?</p>
+
+        <img id="scream" src="./img/77D.gif" alt="">
+        
+        <div id="puerta" onmouseover="show('scream');sound('screamsound')" onmouseout="hide('scream');silence('screamsound')"></div>
+        
+        <audio id="screamsound">
+            <source src="./sonido/scream.mp3" type="audio/mp3">
+        </audio>
+
+
+
+   </div>
+
+
+    
+</body>
+</html>
